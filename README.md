@@ -1,6 +1,6 @@
 # Hamkar Plus MVP
 
-Persian RTL SaaS MVP for project, task, team operations, and light CRM.
+Persian RTL SaaS MVP for project management, task operations, team collaboration, and light CRM workflows.
 
 ## Stack
 - Next.js App Router + TypeScript
@@ -11,14 +11,21 @@ Persian RTL SaaS MVP for project, task, team operations, and light CRM.
 - Session-based auth + RBAC
 - Storage abstraction (local + S3-ready)
 
-## Run
+## Run Locally
 1. Copy `.env.example` to `.env`
-2. Install: `npm install`
-3. Prisma generate: `npm run prisma:generate`
-4. Migrate: `npm run prisma:migrate`
-5. Seed: `npm run prisma:seed`
-6. Start: `npm run dev`
+2. Install dependencies with `npm install`
+3. Run `npm run prisma:generate`
+4. Run `npm run prisma:migrate`
+5. Run `npm run prisma:seed`
+6. Start the app with `npm run dev`
 
-## Demo Account
-- `owner@hamkar.app`
+## Local Seed Data
+After running the seed script, the app creates a local development owner account for testing.
+
+- Email: `owner@hamkar.app`
 - Password: `12345678`
+
+This account is intended for local development only and should not be reused in any shared or production environment.
+
+## Scope
+This repository is positioned as an MVP and foundation for a larger Persian-first operations platform.
